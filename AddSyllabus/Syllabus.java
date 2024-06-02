@@ -37,19 +37,8 @@ public class Syllabus {
         this.code = code;
     }
 
-    public void addData() {};
+    public void addData() {}
 
-    public void saveData(String name, String code) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("courses.txt", true))) {
-            writer.write("Course Name: " + name);
-            writer.newLine();
-            writer.write("Course Code: " + code);
-            writer.newLine();
-            writer.newLine();
-            JOptionPane.showMessageDialog(null, "Course Data saved to file.");
-        } catch (IOException e) {
-            JOptionPane.showMessageDialog(null, "Error saving data to file.", "Error", JOptionPane.ERROR_MESSAGE);
-        }
-    }
+    public void saveData(String name, String code) {}
 
 }
