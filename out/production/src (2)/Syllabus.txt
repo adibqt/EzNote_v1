@@ -1,0 +1,27 @@
+Course Name: OOC
+Course Code: SWE 4201
+
+Course Name: OOC Lab
+Course Code: SWE 4202
+	Chapter Name: Lab Tasks
+	Chapter Number: Chapter 10
+
+	Chapter Name: Introduction 2
+	Chapter Number: Chapter 2
+
+	Chapter Name: Introduction
+	Chapter Number: Chapter 1
+
+
+Course Name: DLD
+Course Code: CSE 4203
+	Chapter Name: New CHapter 
+	Chapter Number: Chapter 1
+
+	Chapter Name: Introduction to DLD
+	Chapter Number: Chapter 9
+
+
+Course Name: Discrete Maths
+Course Code: CSE 4205
+
