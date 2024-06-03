@@ -4,6 +4,7 @@ import AddSyllabus.ChapterForm;
 import AddSyllabus.CourseForm;
 import Resources.ClassNotes;
 import Resources.PersonalNotes;
+import Support.SupportWindow;
 import ViewSyllabus.ViewSyllabus;
 
 import javax.swing.*;
@@ -15,10 +16,11 @@ public class HomeWindow extends HomeButtons {
 
     private JLabel label;
     private ImageIcon icon, image;
-    JButton showSyllabusButton = new JButton("View Syllabus");
-    JButton addCourseButton = new JButton("Add New Course(s)");
-    JButton addChapterButton = new JButton("Add New Chapter(s)");
-    JButton addTopicButton = new JButton("Add New Topic(s)"), openClassNotesWindowButton = new JButton("Open Class Notes Window"), openPersonalNotesWindowButton = new JButton("Open Personal Notes Window");
+    private JButton showSyllabusButton = new JButton("View Syllabus");
+    private JButton addCourseButton = new JButton("Add New Course(s)");
+    private JButton addChapterButton = new JButton("Add New Chapter(s)");
+    private JButton addTopicButton = new JButton("Add New Topic(s)"), openClassNotesWindowButton = new JButton("Open Class Notes Window"), openPersonalNotesWindowButton = new JButton("Open Personal Notes Window");
+    private JButton needSupportButton = new JButton("Support");
 
     public HomeWindow() {
 
@@ -67,19 +69,27 @@ public class HomeWindow extends HomeButtons {
             }
         });
 
-        addButton(container, openClassNotesWindowButton, 520, 430, 360, 60);
+        addButton(container, openClassNotesWindowButton, 520, 340, 360, 60);
         openClassNotesWindowButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 new ClassNotes();
             }
         });
 
-        addButton(container, openPersonalNotesWindowButton, 520, 520, 360, 60);
+        addButton(container, openPersonalNotesWindowButton, 520, 430, 360, 60);
         openPersonalNotesWindowButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 new PersonalNotes();
             }
         });
+
+        addButton(container, needSupportButton, 520, 610, 360, 60);
+        needSupportButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                new SupportWindow();
+            }
+        });
+
 
     }
 }

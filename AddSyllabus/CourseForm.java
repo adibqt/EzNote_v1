@@ -7,8 +7,6 @@ import java.awt.event.ActionListener;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class CourseForm extends DataEntryForm {
 
@@ -17,7 +15,6 @@ public class CourseForm extends DataEntryForm {
     private JLabel courseNameLabel = new JLabel("Course Name:"), courseCodeLabel = new JLabel("Course Code:"), fileNameLabel = new JLabel("File Name: "), noteIconLabel;
     private JTextField courseNameField = new JTextField(), courseCodeField = new JTextField(), fileNameField = new JTextField();
     private JButton addCourseButton = new JButton("Add Course");
-    private List<CourseForm> courseList = new ArrayList<>();
     private ImageIcon noteIcon;
 
     public CourseForm(String name, String code) {
