@@ -8,31 +8,29 @@ import java.io.IOException;
 
 public class ViewSyllabus {
 
-    public ViewSyllabus() {
+    public ViewSyllabus(String filename) {
 
-        JFrame frame = new JFrame("EzNote - Full Syllabus");
+        JFrame frame = new JFrame(filename + " Syllabus");
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.setBounds(550, 270, 1000, 800);
         frame.setVisible(true);
 
         JTextArea textArea = new JTextArea();
         JScrollPane scrollPane = new JScrollPane(textArea);
-//        textArea.setBackground(Color.BLACK);
-//        textArea.setForeground(new Color(237, 87, 56));
         textArea.setFont(new Font("Aerial", Font.BOLD, 20));
         frame.add(scrollPane, BorderLayout.CENTER);
 
         try {
-            String fileContents = readFile("Syllabus.txt");
+            String fileContents = readFile(filename + ".txt");
             textArea.setText(fileContents);
         } catch (IOException e) {
             JOptionPane.showMessageDialog(null, "Error reading file: " + e.getMessage());
         }
     }
 
-    private static String readFile(String fileName) throws IOException {
+    private String readFile(String filename) throws IOException {
         StringBuilder stringBuilder = new StringBuilder();
-        try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 stringBuilder.append(line).append("\n");

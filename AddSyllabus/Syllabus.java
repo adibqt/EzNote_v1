@@ -39,6 +39,6 @@ public class Syllabus {
 
     public void addData() {}
 
-    public void saveData(String name, String code) {}
+    public void saveData(String name, String code, String filename) {}
 
 }

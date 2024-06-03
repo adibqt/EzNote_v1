@@ -1,0 +1,8 @@
+Course Name: Discrete Mathematics
+Course Code: CSE 4205
+
+Chapters included in this Course: 
+
+
+	Course Name: Blah
+	Course Code: Chapter 2

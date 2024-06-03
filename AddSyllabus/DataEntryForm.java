@@ -24,22 +24,22 @@ public class DataEntryForm extends Syllabus {
 
         jNameLabel.setForeground(new Color(237, 87, 56));
         jNameLabel.setFont(new Font("Aerial", Font.PLAIN, 20));
-        jNameLabel.setBounds(150, 300, 170, 40);
+        jNameLabel.setBounds(150, 350, 170, 40);
         container.add(jNameLabel);
 
         jNameField.setFont(new Font("Aerial", Font.PLAIN, 20));
         jNameField.setOpaque(true);
-        jNameField.setBounds(330, 290, 500, 60);
+        jNameField.setBounds(340, 340, 500, 60);
         container.add(jNameField);
 
         jCodeLabel.setForeground(new Color(237, 87, 56));
         jCodeLabel.setFont(new Font("Aerial", Font.PLAIN, 20));
-        jCodeLabel.setBounds(150, 400, 170, 40);
+        jCodeLabel.setBounds(150, 450, 170, 40);
         container.add(jCodeLabel);
 
         jCodeField.setFont(new Font("Aerial", Font.PLAIN, 20));
         jCodeField.setOpaque(true);
-        jCodeField.setBounds(330, 390, 500, 60);
+        jCodeField.setBounds(340, 440, 500, 60);
         container.add(jCodeField);
 
         jButton.setBounds(425, 710, 150, 40);
